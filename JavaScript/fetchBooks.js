@@ -1,3 +1,4 @@
+// Fetches books from Open Library API based on search query
 export async function fetchBooks(query) {
   try {
     const response = await fetch(`https://openlibrary.org/search.json?q=${query}&limit=6`);
